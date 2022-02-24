@@ -258,6 +258,10 @@ hr{
 #sectioncapa img{
     height: 100%;
 }
+#divinferior {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 }
 
 
