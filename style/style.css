@@ -1,9 +1,9 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: lato;
-    color: black;
     list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: rgba(22, 22, 22, 1);
 }
 a{
     text-decoration: none;
@@ -67,14 +67,7 @@ header img{
 #inforcoesiniciais h2{
     font-size: 1.2rem;
 }
-.flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    gap: 5rem;
-}
+
 #produtos img{
     max-width: 100%;
     min-width: 50%;
@@ -82,11 +75,12 @@ header img{
 .button{
     background: rgba(92, 167, 32, 1);
     border: none;
-    padding: 0.5rem;
+    padding: 0.8rem;
     color: rgba(255, 255, 255, 1);
     margin: 0px;
-    font-size: 0.5rem;
+    font-size: 15px;
     margin-left: -4px;
+    width: 10rem;
 }
 span{
     color: rgba(92, 167, 32, 1);
@@ -94,12 +88,12 @@ span{
 }
 
 hr{
-    color:#A5A1A1;
+    color:rgba(165, 161, 161, 1);
 }
 #sectionfooter{
     height: 60vh;
     margin-top: 4rem;
-    background: #F9F9F9;
+    background: rgba(249, 249, 249, 1);
 }
 #divsuperior{
     display: flex;
@@ -125,12 +119,7 @@ hr{
     padding: 0.8rem;
     width: 22rem;
 }
-.button{
-    border: none;
-    padding: 0.8rem;
-    font-size: 15px;
-    width: 10rem;
-}
+
 #divinferior{
     display: flex;
     justify-content: space-between;
@@ -168,15 +157,19 @@ hr{
 #divflexflex h2{
     margin-bottom: 1rem;
 }
-
-
-/* #divflex{
+.flex-container{
     display: flex;
-    align-items: center;
-} */
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    column-gap: 10%;
+    row-gap: 3rem;
+}
+
 @media(max-width:900px){
  .flex-items{
-     width: 150px;
+     width: 200px;
      height: auto;
  }
  .flex-container{
@@ -264,17 +257,6 @@ hr{
 }
 }
 
-
-/* @media(max-width:550px){
-    .flex-items{
-        width: 130px;
-        height: auto;
-    }
-    .flex-container{
-       gap: 1;
-    }
-}
-*/
 @media(max-width:550px){
     .flex-items{
         width: 100px;
@@ -285,10 +267,6 @@ hr{
     }
 } 
 @media(max-width:310px){
-    .flex-items{
-        width: 100px;
-        height: auto;
-    }
     .flex-container{
         justify-content: center;
         gap: 1;
